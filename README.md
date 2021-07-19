@@ -3,7 +3,7 @@
 
 # Author
 
-- Shane McMiken (Boston College, 2021)
+Shane McMiken (Boston College, 2021)
 
 # License
 
