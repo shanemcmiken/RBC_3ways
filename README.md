@@ -1,4 +1,4 @@
-# Solve RBC model using Value function iteration, Projection and Perturbation methods
+# Solve RBC model using value function iteration, projection and perturbation methods
 
 
 # Author
