@@ -14,7 +14,7 @@ Below are policy functions for capital and hours produced by my code. I solve th
 ![VFI_policyfunc](https://user-images.githubusercontent.com/56058438/126243960-8e98c921-9c7e-4c48-b1c7-29a9097f1d8d.png)
 
 # Projection
-Below are policy functions for capital and hours for the RBC model with a non-negativity constraint for investment. I approximate the policy functions using Chebyshev polynomials collocated at the Chebyshev zeros. I use Smolyak's algorithm to reduce the cardinality of the set of zeros used for the approximation. My code for computing Smolyak zeros and evaluating the polynomial are based on codes by Grey Gordon (2010).
+Below are policy functions for consumption and hours for the RBC model with a non-negativity constraint for investment. I approximate the policy functions using Chebyshev polynomials collocated at the Chebyshev zeros. I use Smolyak's algorithm to reduce the cardinality of the set of zeros used for the approximation. My code for computing Smolyak zeros and evaluating the polynomial are based on codes by Grey Gordon (2010).
 
 ![Projection_policyfunc](https://user-images.githubusercontent.com/56058438/126240310-da579a3a-aa9d-44e9-ac15-0151ae8c5cc5.png)
 
