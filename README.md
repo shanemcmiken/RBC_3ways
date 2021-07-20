@@ -1,4 +1,4 @@
-# Solve RBC model using value function iteration, projection and perturbation methods
+# I Solve the RBC model using value function iteration, projection and perturbation methods
 I use value function iteration and perturbation methods to solve the standard RBC model and I use projection methods to solve the RBC model with a non-negativity constraint for investment.
     <embed src="https://github.com/shanemcmiken/RBC_3ways/blob/main/src/Model.pdf">
         <p>You can see the model <a href="https://github.com/shanemcmiken/RBC_3ways/blob/main/src/Model.pdf">here</a>.</p>
@@ -7,7 +7,15 @@ I use value function iteration and perturbation methods to solve the standard RB
 
 # Run code
 
-To run code, download files
+To run code from Julia REPL:
+1. Download files 
+2. Type the path name into Julia REPL ";cd [pathname]\RBC_3ways" into REPL
+3. To load project, type "] activate ." into REPL
+4. To load dependencies, type "] instantiate" 
+5. To precompile dependencies, type "] precompile"
+6. To run code for perturbation method type "include("RBC_Perturbation.jl")"
+7. To run code for projection method type "include("RBC_Projection.jl")"
+8. To run code for value function iteration method type "include("RBC_VFI.jl")"
 
 
 # Value Function Iteration
