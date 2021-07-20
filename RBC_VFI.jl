@@ -54,7 +54,7 @@ ibar  = δ*kbar
 #  GRIDS and TRANSITION MATRIX
 #--------------------------------#
 # Steady state value function
-Vbar = 1.0/(1.0-β)*(cbar^(1.0-η)/(1-η) - hbar^(1.0-ψ)/(1.0-ψ))
+Vbar = 1.0/(1.0-β)*(cbar^(1.0-η)/(1-η) - hbar^(1.0+ψ)/(1.0+ψ))
 
 # Hours grid - in levels
 nh = 150
@@ -178,7 +178,7 @@ function value(currentState::modelstate)
     if cons <= 0
       VVp[i] = -Inf
     else
-      VVp[i] = cons^(1.0-η)/(1.0-η) - (hhgr[i])^(1.0-ψ)/(1.0-ψ) + β*cont[i]
+      VVp[i] = cons^(1.0-η)/(1.0-η) - (hhgr[i])^(1.0+ψ)/(1.0+ψ) + β*cont[i]
     end
   end
 
@@ -247,7 +247,7 @@ function VFI(Vbar::Float64, agrid::Array, kgrid::Array, hgrid::Array, P::Array; 
         consumption = output - investment
 
         # Recompute value function under conjectured policy
-        V_next = consumption.^(1.0-η)./(1.0-η) - hhgr[idx].^(1.0-ψ)./(1.0-ψ) + β*evp_k
+        V_next = consumption.^(1.0-η)./(1.0-η) - hhgr[idx].^(1.0+ψ)./(1.0+ψ) + β*evp_k
         V_next = reshape(V_next,na,nk)
     end
 

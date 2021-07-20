@@ -1,0 +1,41 @@
+\documentclass{article}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage[paperheight=5.75in,paperwidth=8.25in,margin=0.5in]{geometry}
+
+\newcommand\x{\times}
+\newcommand\bigzero{\makebox(0,0){\text{\huge0}}}
+\newcommand*{\bord}{\multicolumn{1}{c|}{}}
+
+\newcommand{\R}{\mathbb{R}}
+\newcommand{\E}{\mathbb{E}}
+\newcommand{\sumt}{\sum_{t=0}^\infty}
+\newcommand{\I}{\mathcal{I}}
+\begin{document}
+\thispagestyle{empty}
+\section{RBC model}
+\begin{gather*}
+	\max_{K_{t+1},H_t,C_t} \E_0 \sum_{t=0}^\infty \beta^t\bigg[ \frac{C_{t}^{1-\eta}}{1-\eta} - \frac{H_t^{1+\psi}}{1+\psi}   \bigg]
+	\\
+	\text{Subject to}
+	\\
+	C_t + K_{t+1} = Z_t K_t^\alpha H_t^{1-\alpha} + (1-\delta)K_t + I_t
+	\\
+	Z_{t+1} = \rho Z_{t} + \sigma \varepsilon_t \sim \mathcal{N}(0,1)
+\end{gather*}
+
+\section{RBC model with non negativity constraint}
+\begin{gather*}
+	\max_{K_{t+1},H_t,C_t} \E_0 \sum_{t=0}^\infty \beta^t\bigg[ \frac{C_{t}^{1-\eta}}{1-\eta} - \frac{H_t^{1+\psi}}{1+\psi}   \bigg]
+	\\
+	\text{Subject to}
+	\\
+	C_t + I_t = Z_t K_t^\alpha H_t^{1-\alpha}
+	\\
+	I_t = K_{t+1} - (1-\delta)K_t \geq 0 \; \Phi \geq 0
+	\\
+	Z_{t+1} = \rho Z_{t} + \sigma \varepsilon_t \sim \mathcal{N}(0,1)
+\end{gather*}
+	
+\end{document}

@@ -222,4 +222,4 @@ irx2 = plot(1:T,irfx[:,2], title="Technology", label="IRF")
 
 impulseresponses = plot(iry1,iry2,iry3,iry4,iry5,iry6,irx1,irx2, layout = (4,2), legend = false)
 display(impulseresponses)
-savefig(policyfunctions,"./IRs.png")
+savefig(impulseresponses,"./impulseresponses.png")
