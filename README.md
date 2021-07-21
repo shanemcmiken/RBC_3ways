@@ -1,4 +1,4 @@
-# I Solve the RBC model using value function iteration, projection and perturbation methods
+# I solve the RBC model using value function iteration, projection, and perturbation methods
 I use value function iteration and perturbation methods to solve the standard RBC model and I use projection methods to solve the RBC model with a non-negativity constraint for investment.
     <embed src="https://github.com/shanemcmiken/RBC_3ways/blob/main/src/Model.pdf">
         <p>You can see the model <a href="https://github.com/shanemcmiken/RBC_3ways/blob/main/src/Model.pdf">here</a>.</p>
